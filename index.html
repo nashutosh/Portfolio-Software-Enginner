@@ -1,546 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashutosh Singh | Software Engineer</title>
-    
-    <!-- Cache Control -->
-    <meta http-equiv="Cache-Control" content="no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Ashutosh Singh - Software Engineer specializing in Java DSA, MERN Stack, and AI. B.Tech @ Parul University with experience in high-performance solutions.">
-    <meta name="keywords" content="Ashutosh Singh, Software Engineer, Java, DSA, MERN Stack, AI, Full Stack Developer, Web Developer">
-    <meta name="author" content="Ashutosh Singh">
-    
-    <!-- Open Graph / Social Media Preview -->
-    <meta property="og:title" content="Ashutosh Singh | Software Engineer">
-    <meta property="og:description" content="Software Engineer specializing in Java DSA, MERN Stack, and AI">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://github.com/ashutosh-engineer.png">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Ashutosh Singh | Software Engineer">
-    <meta name="twitter:description" content="Software Engineer specializing in Java DSA, MERN Stack, and AI">
-    <meta name="twitter:image" content="https://github.com/ashutosh-engineer.png">
-    
-    <!-- Preload Key Resources -->
-    <link rel="preload" href="styles.css?v=4.2.0" as="style">
-    <link rel="preload" href="https://github.com/ashutosh-engineer.png" as="image">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2">
-    
-    <!-- Favicon with fallback -->
-    <link rel="icon" type="image/png" href="https://github.com/ashutosh-engineer.png" onerror="this.onerror=null;this.href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>';">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css?v=4.2.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Critical CSS for fastest rendering -->
-    <style>
-        :root {
-            --primary-color: #6d8eff;
-            --secondary-color: #3d4b75;
-            --accent-color: #ff7a7a;
-            --bg-color: #121212;
-            --text-color: #ffffff;
-        }
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-        }
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=1974&auto=format&fit=crop') no-repeat center center/cover;
-        }
-    </style>
-    
-    <!-- Version control for cache management -->
-    <script>
-        window.APP_VERSION = '4.2.0';
-    </script>
-    
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ashutosh Singh",
-      "jobTitle": "Software Engineer",
-      "url": "https://ashutosh-engineer.github.io",
-      "sameAs": [
-        "https://github.com/ashutosh-engineer",
-        "https://www.linkedin.com/in/ashutosh-singh-7945812b2/",
-        "https://leetcode.com/Ashu054/",
-        "https://codeforces.com/profile/ashutoshsingh6376"
-      ],
-      "knowsAbout": ["Java", "DSA", "MERN Stack", "AI", "Web Development", "Software Engineering"]
-    }
-    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashutosh Singh | Portfolio</title>
+    <meta name="description" content="Aspiring Software Engineer and backend-focused developer portfolio of Ashutosh Singh." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Ashutosh Singh</h1>
-            </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#course-work">Course Work</a></li>
-                <li><a href="#featured-project">Featured Project</a></li>
-                <li><a href="#internships">Internships</a></li>
-                <li><a href="#github-stats">GitHub Stats</a></li>
-                <li><a href="#coding-profiles">Coding Profiles</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="bg-grid" aria-hidden="true"></div>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Hello, I'm <span class="highlight">Ashutosh Singh</span></h1>
-                <h2>Aspiring Software Engineer</h2>
-                <p>Java DSA • MERN Stack • AI • B.Tech @ Parul University</p>
-                
-                <div class="hero-buttons">
-                    <a href="https://github.com/ashutosh-engineer" target="_blank" class="btn">View My Work</a>
-                    <a href="https://www.linkedin.com/in/ashutosh-singh-7945812b2/" target="_blank" class="btn btn-outline">Contact Me</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-img-placeholder">
-                    <i class="fas fa-user-circle"></i>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <a href="#about">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
-    </section>
+    <main>
+        <section id="home" class="hero section container">
+            <p class="eyebrow">Aspiring Software Engineer</p>
+            <h1>Backend Focused.</h1>
+            <p class="hero-copy">
+                I build reliable backend systems, secure APIs, and practical AI-enabled tools that solve real problems.
+            </p>
+            <a class="primary-btn" href="#projects">View Projects</a>
+        </section>
 
-    <!-- News Ticker -->
-    <div class="news-ticker-container">
-        <div class="news-ticker-label" id="whats-new-label" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open recent news and achievements">
-            <span>What's New</span>
-        </div>
-        <div class="news-ticker">
-            <div class="news-ticker-content">
-                <span class="ticker-item">
-                    <img src="https://codeforces.org/s/0/android-icon-192x192.png" alt="CodeForces Logo" class="news-logo" />
-                    <i class="fas fa-trophy"></i> 
-                    Ranked #13634 in Codeforces Round 1042 (Div. 3): <a href="https://codeforces.com/contests/with/ashutoshsingh6376" target="_blank">View Contest History</a> 
-                    <span class="ticker-date">Aug 2025</span>
-                </span>
-                <span class="ticker-item">
-                    <img src="https://leetcode.com/static/images/LeetCode_logo.png" alt="LeetCode Logo" class="news-logo" />
-                    <i class="fas fa-trophy"></i> 
-                    Ranked Top 500 Globally in LeetCode Biweekly Contest 161: <a href="https://leetcode.com/u/Ashu054/" target="_blank">View Profile</a> 
-                    <span class="ticker-date">Aug 2024</span>
-                </span>
-                <span class="ticker-item">
-                    <img src="https://avatars.githubusercontent.com/u/916923?v=4" alt="OWASP Logo" class="news-logo" />
-                    <i class="fas fa-check-circle"></i> 
-                    Solved #506 (Gap Analysis & Matching Optimization) in OWASP OpenCRE: <a href="https://github.com/OWASP/OpenCRE/pull/617" target="_blank">PR #617</a> 
-                    <span class="ticker-date">Jul 24, 2024</span>
-                </span>
-                <span class="ticker-item">
-                    <img src="https://avatars.githubusercontent.com/u/916923?v=4" alt="OWASP Logo" class="news-logo" />
-                    <i class="fas fa-check-circle"></i> 
-                    Solved #585 (Automatic Mapping of Standards to CREs) in OWASP OpenCRE: <a href="https://github.com/OWASP/OpenCRE/pull/618" target="_blank">PR #618</a> 
-                    <span class="ticker-date">Jul 24, 2024</span>
-                </span>
-                <span class="ticker-item">
-                    <img src="https://avatars.githubusercontent.com/u/916923?v=4" alt="OWASP Logo" class="news-logo" />
-                    <i class="fas fa-check-circle"></i> 
-                    Solved #614 in OWASP OpenCRE: <a href="https://github.com/OWASP/OpenCRE/pulls" target="_blank">View Pull Request</a> 
-                    <span class="ticker-date">Jul 23, 2024</span>
-                </span>
+        <section id="about" class="section container">
+            <h2>About</h2>
+            <div class="card prose">
+                <p>Hi, I am Ashutosh!</p>
+                <p>
+                    I am a passionate computer science student and software developer with a deep interest in building intelligent,
+                    scalable systems that solve real-world problems.
+                </p>
+                <p>
+                    My journey in tech is fueled by a strong foundation in data structures and algorithms, which I have honed through
+                    consistent practice and competitive programming.
+                </p>
+                <p>
+                    I am also an avid builder of projects. From a competitive programmer to a developer, I enjoy working across the stack,
+                    whether it is backend development with Python (Flask) or integrating machine learning models.
+                </p>
+                <p>
+                    I am always open to connecting, collaborating, and discussing new opportunities in software engineering and AI.
+                </p>
             </div>
-        </div>
-    </div>
-    
-    <!-- Modal for What's New Events -->
-    <div id="events-modal" class="modal" aria-modal="true" role="dialog" aria-labelledby="modal-title">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 id="modal-title">Recent Contributions & Achievements <span class="modal-badge">New</span></h2>
-                <span class="close-modal" role="button" tabindex="0" aria-label="Close modal">&times;</span>
-            </div>
-            <div class="modal-body">
-                <div class="table-container">
-                    <table class="events-table">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Event</th>
-                                <th>Organization</th>
-                                <th>Repository</th>
-                                <th>Details</th>
-                                <th>Link</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="highlight-row">
-                                <td>Aug 2025</td>
-                                <td>Codeforces Round 1042 (Div. 3)</td>
-                                <td><img src="https://codeforces.org/s/0/android-icon-192x192.png" alt="CodeForces Logo" class="news-logo-table" /> CodeForces</td>
-                                <td>Contest</td>
-                                <td>Ranked #13634</td>
-                                <td><a href="https://codeforces.com/contests/with/ashutoshsingh6376" target="_blank" class="btn btn-sm">View Contest</a></td>
-                            </tr>
-                            <tr>
-                                <td>Aug 2024</td>
-                                <td>LeetCode Biweekly Contest 161</td>
-                                <td><img src="https://leetcode.com/static/images/LeetCode_logo.png" alt="LeetCode Logo" class="news-logo-table" /> LeetCode</td>
-                                <td>Contest</td>
-                                <td>Ranked Top 500 Globally</td>
-                                <td><a href="https://leetcode.com/u/Ashu054/" target="_blank" class="btn btn-sm">View Profile</a></td>
-                            </tr>
-                            <tr>
-                                <td>Jul 24, 2024</td>
-                                <td>Solved Issue #506</td>
-                                <td><img src="https://avatars.githubusercontent.com/u/916923?v=4" alt="OWASP Logo" class="news-logo-table" /> OWASP</td>
-                                <td>OpenCRE</td>
-                                <td>Gap Analysis & Matching Optimization</td>
-                                <td><a href="https://github.com/OWASP/OpenCRE/pull/617" target="_blank" class="btn btn-sm">View PR #617</a></td>
-                            </tr>
-                            <tr>
-                                <td>Jul 24, 2024</td>
-                                <td>Solved Issue #585</td>
-                                <td><img src="https://avatars.githubusercontent.com/u/916923?v=4" alt="OWASP Logo" class="news-logo-table" /> OWASP</td>
-                                <td>OpenCRE</td>
-                                <td>Automatic Mapping of Standards to CREs</td>
-                                <td><a href="https://github.com/OWASP/OpenCRE/pull/618" target="_blank" class="btn btn-sm">View PR #618</a></td>
-                            </tr>
-                            <tr>
-                                <td>Jul 23, 2024</td>
-                                <td>Solved Issue #614</td>
-                                <td><img src="https://avatars.githubusercontent.com/u/916923?v=4" alt="OWASP Logo" class="news-logo-table" /> OWASP</td>
-                                <td>OpenCRE</td>
-                                <td>Core Framework Enhancements</td>
-                                <td><a href="https://github.com/OWASP/OpenCRE/pulls" target="_blank" class="btn btn-sm">View PR</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <p>All contributions are open source and publicly available on GitHub</p>
-            </div>
-        </div>
-    </div>
+        </section>
 
-    <section id="about" class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>Aspiring Software Engineer with a strong foundation in Data Structures & Algorithms (Java) and full-stack development (MERN). Currently on a focused 2-year roadmap targeting scalable system design, AI integration, and development excellence.</p>
-                
-                <p>Previously contributed at NMS Software and Innovation India Pvt Ltd, where I worked on AI-driven, high-performance solutions involving scalable architecture and modern system design strategies.</p>
-                
-                <p>Collaborated with iNeuron.ai on a climate change analysis project leveraging ML/DL techniques for actionable insights. Pursuing a Diploma in Information Technology at Parul University with active interests in backend engineering (Node.js), containerization (Docker), and zero-to-one product building.</p>
-                
-                <p>Actively preparing for high-impact engineering roles with a strong focus on open-source contribution, Google Summer of Code (GSoC), and startup-driven innovation. My long-term vision includes solving large-scale problems at companies like Google, Meta, and other product-first tech giants, through a blend of algorithmic depth, system design expertise, and end-to-end ownership.</p>
-                
-                <p>My technical skills include:</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Java</span>
-                    <span class="tech-tag">DSA</span>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">MongoDB</span>
-                    <span class="tech-tag">Express</span>
-                    <span class="tech-tag">ML</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">System Design</span>
-                </div>
+        <section id="skills" class="section container">
+            <div class="section-head">
+                <h2>Skills</h2>
             </div>
-        </div>
-    </section>
+            <div class="skills-grid">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>FastAPI</span>
+                <span>SQLAlchemy</span>
+                <span>PostgreSQL</span>
+                <span>Databases</span>
+                <span>REST API</span>
+                <span>Security</span>
+                <span>Scalability</span>
+                <span>JWT</span>
+                <span>RBAC</span>
+                <span>2FA</span>
+                <span>Socket.IO</span>
+                <span>Redis</span>
+                <span>Redis Pub/Sub</span>
+                <span>Celery</span>
+                <span>Docker</span>
+                <span>CI/CD</span>
+                <span>GitHub Actions</span>
+                <span>Machine Learning</span>
+                <span>RAG</span>
+                <span>ChromaDB</span>
+                <span>MLflow</span>
+                <span>Streamlit</span>
+                <span>C++</span>
+                <span>Data Structures</span>
+                <span>HLD</span>
+                <span>LLD</span>
+            </div>
+        </section>
 
-    <section id="education" class="education">
-        <h2 class="section-title">Education</h2>
-        <div class="education-container">
-            <div class="education-card">
-                <div class="education-logo">
-                    <img src="https://paruluniversity.ac.in/pu-web/images/logo.png" alt="Parul University Logo">
-                </div>
-                <div class="education-details">
-                    <div class="education-header">
-                        <h3>Bachelors in CSE</h3>
-                        <span class="education-year">2026 - 2029</span>
-                    </div>
-                    <div class="education-divider"></div>
-                    <p class="education-institution">Parul University</p>
-                    <div class="education-content">
-                        <p>Computer Science and Engineering</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="education-card">
-                <div class="education-logo">
-                    <img src="https://paruluniversity.ac.in/pu-web/images/logo.png" alt="Parul University Logo">
-                </div>
-                <div class="education-details">
-                    <div class="education-header">
-                        <h3>Diploma in Information Technology</h3>
-                        <span class="education-year">2023 - 2026</span>
-                    </div>
-                    <div class="education-divider"></div>
-                    <p class="education-institution">Parul University</p>
-                    <div class="education-content">
-                        <div class="education-achievement">
-                            <span class="achievement-label">CGPA</span>
-                            <span class="achievement-value">9.6</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section id="projects" class="section container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <article class="project-card card">
+                    <h3>Collaborative Task Management Platform</h3>
+                    <ul>
+                        <li>Designed scalable system architecture using HLD and LLD principles for modular and maintainable development.</li>
+                        <li>Implemented secure authentication using JWT with role-based access control (RBAC).</li>
+                        <li>Integrated two-factor authentication (2FA) for enhanced account security.</li>
+                        <li>Built real-time task updates using Socket.IO for instant synchronization across users.</li>
+                        <li>Used Redis Pub/Sub to support real-time communication and event handling.</li>
+                        <li>Developed RESTful APIs using Flask and PostgreSQL for efficient backend operations.</li>
+                        <li>Implemented asynchronous background processing using Celery and Redis.</li>
+                        <li>Handled background jobs such as notifications and heavy tasks efficiently.</li>
+                        <li>Applied security measures including input validation, rate limiting, and secure headers.</li>
+                        <li>Containerized the application using Docker for consistent deployment.</li>
+                        <li>Set up CI/CD pipeline using GitHub Actions for automated testing and deployment.</li>
+                    </ul>
+                </article>
 
-    <section id="course-work" class="course-work">
-        <h2 class="section-title">Course Work</h2>
-        <div class="course-work-content">
-            <div class="tech-certifications">
-                <!-- First row -->
-                <div class="cert-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Advanced Certification" class="cert-logo">
-                </div>
-                <div class="cert-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Web Development (MERN Stack) Certification" class="cert-logo">
-                </div>
-                <div class="cert-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js Backend Certification" class="cert-logo">
-                </div>
-                <div class="cert-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Database Certification" class="cert-logo">
-                </div>
-                
-                <!-- Second row (offset) -->
-                <div class="cert-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Data Structures with Java Certification" class="cert-logo">
-                </div>
-                <div class="cert-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Programming Certification" class="cert-logo">
-                </div>
-                <div class="cert-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="Express.js Framework Certification" class="cert-logo">
-                </div>
-                <div class="cert-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Version Control Certification" class="cert-logo">
-                </div>
-                
-                <!-- Third row -->
-                <div class="cert-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 & Web Standards Certification" class="cert-logo">
-                </div>
-                <div class="cert-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="Machine Learning Certification" class="cert-logo">
-                </div>
-                <div class="cert-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker & Containerization Certification" class="cert-logo">
-                </div>
-                <div class="cert-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="System Design Certification" class="cert-logo">
-                </div>
+                <article class="project-card card">
+                    <h3>Intelligent IT Operations Assistant</h3>
+                    <ul>
+                        <li>Built an AI-powered system using retrieval-augmented generation (RAG) architecture.</li>
+                        <li>Enabled natural language querying for incident data analysis.</li>
+                        <li>Implemented semantic search using vector embeddings with ChromaDB.</li>
+                        <li>Developed root cause analysis to identify patterns in incidents.</li>
+                        <li>Integrated anomaly detection for identifying unusual trends.</li>
+                        <li>Designed backend services using FastAPI.</li>
+                        <li>Created a simple interface using Streamlit.</li>
+                        <li>Integrated MLflow for experiment tracking.</li>
+                        <li>Containerized the application using Docker.</li>
+                    </ul>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="featured-project" class="featured-project">
-        <h2 class="section-title">Hackathons and Acheivements</h2>
-        <div class="featured-project-container">
-            <div class="featured-project-slider">
-                <div class="project-card" data-project="signify">
-                    <div class="project-preview">
-                        <h3>Signify – Empowering the Deaf</h3>
-                        <p class="award-badge">🏆 PUCode Hackathon Winner</p>
-                        <button class="expand-btn"><i class="fas fa-chevron-down"></i></button>
-                    </div>
-                    <div class="project-details">
-                        <h3>Signify – Empowering the Deaf: Bridging Communication Gaps through Innovation</h3>
-                        <p class="award-badge">🏆 PUCode Hackathon Winner @ Parul University</p>
-                        <p class="project-description">
-                            A sign language translator using AI that converts text to sign grammar visuals, making communication simpler for the deaf community. Built entirely from scratch, our project integrates hand gestures, facial expressions, and context for a seamless experience.
-                        </p>
-                        <div class="tech-used">
-                            <span class="tech-tag">AI</span>
-                            <span class="tech-tag">Machine Learning</span>
-                            <span class="tech-tag">Computer Vision</span>
-                            <span class="tech-tag">Accessibility</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://signify-echelon.netlify.app/" target="_blank" class="btn">View Project</a>
-                        </div>
-                        <button class="collapse-btn"><i class="fas fa-chevron-up"></i></button>
-                    </div>
-                </div>
-                
-                <!-- Add more project cards here as needed -->
-                <div class="project-card" data-project="project2">
-                    <div class="project-preview">
-                        <h3>Agrivistar</h3>
-                        <p class="award-badge">🥇 Vadodara Hackathon 5.0 by Parul University</p>
-                        <button class="expand-btn"><i class="fas fa-chevron-down"></i></button>
-                    </div>
-                    <div class="project-details">
-                        <h3>Agrivistar: Mobile App for Farmers</h3>
-                        <p class="award-badge">🥇 Vadodara Hackathon 5.0 by Parul University</p>
-                        <p class="project-description">
-                            Developed a SaaS-level mobile application for farmers to facilitate buying and selling agricultural products. Contributed to the Python backend implementation, creating APIs and database models to support the marketplace functionality and user management system.
-                        </p>
-                        <div class="tech-used">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Backend</span>
-                            <span class="tech-tag">SaaS</span>
-                            <span class="tech-tag">API Development</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank" class="btn">View Project</a>
-                        </div>
-                        <button class="collapse-btn"><i class="fas fa-chevron-up"></i></button>
-                    </div>
-                </div>
+        <section id="profiles" class="section container">
+            <h2>Coding Profiles</h2>
+            <div class="profiles">
+                <a class="profile-link card" href="https://github.com/ashutosh-engineer" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="profile-link card" href="https://leetcode.com/u/AshutoshSingh27" target="_blank" rel="noopener noreferrer">LeetCode</a>
+                <a class="profile-link card" href="https://www.hackerrank.com/profile/h2303466200070" target="_blank" rel="noopener noreferrer">HackerRank</a>
+                <a class="profile-link card" href="https://www.codechef.com/users/ashutosh_2120" target="_blank" rel="noopener noreferrer">CodeChef</a>
+                <a class="profile-link card" href="https://codeforces.com/profile/ashutosh4dec" target="_blank" rel="noopener noreferrer">Codeforces</a>
             </div>
-            
-            <!-- Navigation controls -->
-            <div class="slider-controls">
-                <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                <div class="slider-dots">
-                    <span class="dot active" data-index="0"></span>
-                    <span class="dot" data-index="1"></span>
-                </div>
-                <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section id="internships" class="internships">
-        <h2 class="section-title">Internships & Contributions</h2>
-        <div class="internships-container">
-            <!-- GSSoC - GirlScript Summer of Code -->
-            <div class="internship-card">
-                <div class="company-logo">
-                    <img src="https://girlscript.github.io/GirlScript-Summer-of-Code/images/favicon/favicon.png" alt="GirlScript Summer of Code Logo" class="company-img">
-                </div>
-                <div class="internship-details">
-                    <h3>Open Source Contributor <span class="internship-tag">Open Source Contribution</span></h3>
-                    <h4 class="company-name">GirlScript Summer of Code</h4>
-                    <p class="internship-description">
-                        Participated in India's largest beginner-friendly open source program. Contributed to multiple open source projects, collaborated with developers worldwide, and enhanced coding skills through real-world project contributions. GSSoC is a 3-month long program that helps beginners get started with Open Source Development.
-                    </p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Open Source</span>
-                        <span class="tech-tag">Git</span>
-                        <span class="tech-tag">GitHub</span>
-                        <span class="tech-tag">Collaboration</span>
-                        <span class="tech-tag">Code Review</span>
-                        <span class="tech-tag">Documentation</span>
-                    </div>
-                    <div class="internship-links">
-                        <a href="https://www.linkedin.com/in/ashutosh-singh-7945812b2/overlay/1754422651509/single-media-viewer/?profileId=ACoAAEsw7yABFMLGn97_47RLfE7yFRaibZf-JX0" target="_blank" class="btn">LinkedIn Post</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- NMS Softwares and Innovation India Pvt Ltd -->
-            <div class="internship-card">
-                <div class="company-logo">
-                    <img src="https://nmssoftwares.com/images/logo.png" alt="NMS Softwares and Innovation India Pvt Ltd Logo" class="company-img">
-                </div>
-                <div class="internship-details">
-                    <h3>Software Engineer <span class="internship-tag">Internship</span></h3>
-                    <h4 class="company-name">NMS Softwares and Innovation India Pvt Ltd</h4>
-                    <p class="internship-description">
-                        Contributed to ML-driven, high-performance solutions involving scalable architecture and modern system design strategies. Worked with cutting-edge technologies to develop robust and efficient software solutions.
-                    </p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Java</span>
-                        <span class="tech-tag">ML</span>
-                        <span class="tech-tag">MERN Stack</span>
-                        <span class="tech-tag">System Design</span>
-                        <span class="tech-tag">Scalable Architecture</span>
-                    </div>
-                    <div class="internship-links">
-                        <a href="https://nmssoftwares.com/" target="_blank" class="btn">Company Website</a>
-                        <a href="https://www.linkedin.com/company/nms-softwares-and-innovation-india-pvt-ltd/posts/?feedView=all" target="_blank" class="btn btn-outline">LinkedIn</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- iNeuron.ai -->
-            <div class="internship-card">
-                <div class="company-logo">
-                    <img src="https://ineuron.ai/images/ineuron-logo.png" alt="iNeuron.ai Logo" class="company-img" onerror="this.src='https://placehold.co/120x120?text=iNeuron.ai'">
-                </div>
-                <div class="internship-details">
-                    <h3>Machine Learning Engineer <span class="internship-tag">Project-based Internship</span></h3>
-                    <h4 class="company-name">iNeuron.ai</h4>
-                    <p class="internship-description">
-                        Project: Analysis and Prediction of Climate Change in the United States of America. Implemented machine learning and deep learning techniques to analyze climate data patterns and develop predictive models for temperature trends and climate change impacts.
-                    </p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">Deep Learning</span>
-                        <span class="tech-tag">Data Analysis</span>
-                        <span class="tech-tag">Time Series</span>
-                    </div>
-                    <div class="internship-links">
-                        <a href="https://www.linkedin.com/in/ashutosh-singh-7945812b2/overlay/1736671565212/single-media-viewer/?profileId=ACoAAEsw7yABFMLGn97_47RLfE7yFRaibZf-JX0" target="_blank" class="btn">Offer Letter</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="github-stats" class="github-stats">
-        <h2 class="section-title">GitHub Stats</h2>
-        <div class="github-stats-container">
-            <div class="github-readme-stats">
-                <img src="https://github-readme-stats.vercel.app/api?username=ashutosh-engineer&show_icons=true&theme=radical" alt="Ashutosh's GitHub Stats" class="github-stats-card-img">
-                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashutosh-engineer&layout=compact&theme=radical" alt="Top Languages" class="github-stats-card-img">
-            </div>
-        </div>
-    </section>
-
-    <section id="coding-profiles" class="coding-profiles">
-        <h2 class="section-title">Coding Profiles</h2>
-        <div class="profiles-container">
-            <a href="https://github.com/ashutosh-engineer" target="_blank" class="profile-link">
-                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="profile-logo github-logo">
-                <span>GitHub</span>
-            </a>
-            <a href="https://leetcode.com/Ashu054/" target="_blank" class="profile-link">
-                <img src="https://assets.leetcode.com/static_assets/public/icons/favicon-192x192.png" alt="LeetCode Logo" class="profile-logo leetcode-logo">
-                <span>LeetCode</span>
-            </a>
-            <a href="https://codeforces.com/profile/ashutoshsingh6376" target="_blank" class="profile-link">
-                <img src="https://codeforces.org/s/0/android-icon-192x192.png" alt="CodeForces Logo" class="profile-logo codeforces-logo">
-                <span>CodeForces</span>
-            </a>
-        </div>
-    </section>
-
-    <script src="script.js?v=4.2.0"></script>
 </body>
 </html>
