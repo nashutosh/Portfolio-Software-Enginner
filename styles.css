@@ -107,6 +107,14 @@ h3 {
     margin-inline: auto;
 }
 
+.hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+}
+
 .primary-btn {
     text-decoration: none;
     width: fit-content;
@@ -120,6 +128,42 @@ h3 {
 }
 
 .primary-btn:hover {
+    transform: translateY(-2px);
+}
+
+.gmail-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: #1f1f1f;
+    border: 1px solid transparent;
+    background:
+        linear-gradient(#f8f8f8, #f8f8f8) padding-box,
+        linear-gradient(120deg, #4285f4, #ea4335, #fbbc05, #34a853) border-box;
+}
+
+.gmail-btn:hover {
+    transform: translateY(-2px);
+    filter: saturate(1.08);
+}
+
+.secondary-btn {
+    text-decoration: none;
+    width: fit-content;
+    padding: 0.72rem 1.05rem;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    color: #f2f2f2;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: rgba(255, 255, 255, 0.03);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.secondary-btn:hover {
+    border-color: #e8e8e8;
     transform: translateY(-2px);
 }
 
@@ -150,19 +194,26 @@ h3 {
     text-align: center;
 }
 
-.skills-grid {
+.skills-list {
+    padding: 1rem 1.1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
-    gap: 0.6rem;
+    gap: 0.65rem;
 }
 
-.skills-grid span {
-    padding: 0.55rem 0.7rem;
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    color: #e6e6e6;
-    background: rgba(255, 255, 255, 0.02);
-    font-size: 0.9rem;
+.skills-list p {
+    color: #d8d8d8;
+    line-height: 1.75;
+}
+
+.skill-label {
+    display: inline-block;
+    margin-right: 0.35rem;
+    padding: 0.14rem 0.6rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(66, 133, 244, 0.18), rgba(234, 67, 53, 0.18), rgba(251, 188, 5, 0.18), rgba(52, 168, 83, 0.18));
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #f5f5f5;
+    font-weight: 700;
 }
 
 .project-list {
@@ -184,6 +235,20 @@ h3 {
     color: #cdcdcd;
 }
 
+.achievement-card {
+    padding: 1rem 1rem 1rem 1.1rem;
+}
+
+.achievement-card ul {
+    padding-left: 1.2rem;
+    display: grid;
+    gap: 0.55rem;
+}
+
+.achievement-card li {
+    color: #d5d5d5;
+}
+
 .profiles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -196,7 +261,18 @@ h3 {
     padding: 0.85rem;
     text-align: center;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
     transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.profile-logo {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 .profile-link:hover {
