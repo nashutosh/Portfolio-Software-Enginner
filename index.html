@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ashutosh Singh | Software Engineer</title>
+    <title>Ashutosh Singh | Portfolio</title>
     <meta name="description" content="Aspiring Software Engineer and backend-focused developer portfolio of Ashutosh Singh." />
+    <link rel="icon" href="data:," />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
@@ -22,11 +23,9 @@
             </p>
             <div class="hero-actions">
                 <a class="primary-btn gmail-btn" href="mailto:ashutoshsingh6376@gmail.com">
-                    <img class="profile-logo" src="https://cdn.simpleicons.org/gmail/EA4335" alt="Gmail logo" loading="lazy" />
                     <span>Gmail</span>
                 </a>
                 <a class="secondary-btn" href="https://www.linkedin.com/in/ashutosh-singh-7945812b2" target="_blank" rel="noopener noreferrer">
-                    <img class="profile-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn logo" loading="lazy" />
                     <span>LinkedIn</span>
                 </a>
             </div>
@@ -81,6 +80,20 @@
             <h2>Projects</h2>
             <div class="project-list">
                 <article class="project-card card">
+                    <h3>Twitter Clone</h3>
+                    <ul>
+                        <li>Designed a scalable Twitter-like system with timeline generation using fan-out strategies (write/read) to support high concurrency.</li>
+                        <li>Built real-time tweet updates and notifications using WebSockets and Redis Pub/Sub.</li>
+                        <li>Reduced latency using Redis caching for timelines and frequently accessed data.</li>
+                        <li>Developed a secure authentication system using JWT with RBAC.</li>
+                        <li>Designed and implemented RESTful APIs (Flask/FastAPI + PostgreSQL) for tweets, follows, likes, and interactions.</li>
+                        <li>Optimized PostgreSQL queries and schema for high-throughput and consistency.</li>
+                        <li>Implemented rate limiting and abuse protection for APIs.</li>
+                        <li>Containerized services using Docker and automated deployment via GitHub Actions (CI/CD).</li>
+                    </ul>
+                </article>
+
+                <article class="project-card card">
                     <h3>Collaborative Task Management Platform</h3>
                     <ul>
                         <li>Designed scalable system architecture using HLD and LLD principles for modular and maintainable development.</li>
@@ -111,6 +124,7 @@
                         <li>Containerized the application using Docker.</li>
                     </ul>
                 </article>
+
             </div>
         </section>
 
